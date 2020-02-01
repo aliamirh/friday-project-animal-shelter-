@@ -1,7 +1,12 @@
 class AnimalsController < ApplicationController
 
   def index
-    @animals = Animal.all
+    name = params[:name]
+    if name != nil
+      @animals = Animal.search_name(name)
+    else
+      @animals = Animal.all
+    end
     json_response(@animals)
   end
 
@@ -21,7 +26,7 @@ class AnimalsController < ApplicationController
     render status: 200, json: {
       message: "Your quote has successfully been updated."
     }
-  
+
   end
 
   def destroy

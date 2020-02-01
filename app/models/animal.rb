@@ -4,12 +4,4 @@ class Animal < ApplicationRecord
   def self.search_name(name)
       where("name like ?", "%#{name.titleize}%")
   end
-
-  def self.search_name(breed)
-      where("name like ?", "%#{breed.titleize}%")
-  end
-  
-  def self.search_name(color)
-      where("name like ?", "%#{color.titleize}%")
-  end
 end
