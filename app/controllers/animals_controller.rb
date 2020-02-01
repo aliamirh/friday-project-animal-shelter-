@@ -17,7 +17,11 @@ class AnimalsController < ApplicationController
 
   def update
     @animal = Animal.find(params[:id])
-    @animal.update(animal_params)
+    @animal.update!(animal_params)
+    render status: 200, json: {
+      message: "Your quote has successfully been updated."
+    }
+  
   end
 
   def destroy
