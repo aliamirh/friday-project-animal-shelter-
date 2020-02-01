@@ -6,7 +6,7 @@
 
 ## Description
 
-_This is a API that can call to the database and returns a list of 10 dogs and 10 cats. Each Cat and Dog have values attached to them. So they each will have a Breed, Name, Color, and Age._
+_This is a API that can make calls to the database and returns a list of objects each containing 10 dogs, and 10 cats. Each Cat and Dog have values attached to them. So they each will have a Breed, Name, Color, and Age. They wont be explicitly say Cat or Dog so knowing animal breeds will be a plus!_
 
 ## Setup/Installation Requirements
 
