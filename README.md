@@ -8,7 +8,7 @@
 
 _This is a API that can make calls to the database and returns a list of objects each containing 10 dogs, and 10 cats. Each Cat and Dog have values attached to them. So they each will have a Breed, Name, Color, and Age. They wont be explicitly say Cat or Dog so knowing animal breeds will be a plus!_
 
-## Setup/Installation Requirements
+## Installation Requirements
 
 * _clone/download Repository_
 * _Download Postman_
@@ -19,6 +19,32 @@ _This is a API that can make calls to the database and returns a list of objects
 * _Run "rake db:seed"_
 * _Run "rails s"_
 * _Through postman enter http://localhost:3000/animals .Click "Send"_
+
+## Setup
+###### Return a list of all animals
+* _GET localhost:3000/animals_
+
+###### Return a specific animal by ID number.
+* _GET localhost:3000/animals/:id_
+
+###### Delete a animal by ID number.
+* _DELETE localhost:3000/animals/:id_
+
+###### Add Animal
+* _POST localhost:3000/animals_
+* Parameters:
+ * 'breed:'
+ * 'name:'
+ * 'color:'
+ * 'age:'
+
+###### Edit Animal
+* _POST localhost:3000/animals/:id_
+* Parameters:
+  * 'breed: Black Lab'
+  * 'name: Bart'
+  * 'color: Black'
+  * 'age: 2 '
 
 
 
